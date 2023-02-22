@@ -1,0 +1,17 @@
+ 
+<launch>
+
+  
+    <node pkg="turtlesim" name="" type="turtlesim_node"/>
+    
+    <arg name="name"/>
+  
+<node pkg="draw_name" name="" type="drawName.py" output="screen" args="$(arg name)"/>
+    
+  <node pkg="draw_name" name="" type="turtle_pos_sub.py" output="screen" /> 
+  
+ 
+
+  
+  
+</launch>
